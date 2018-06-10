@@ -2819,7 +2819,7 @@ bacon: otapackage
 alliance: otapackage
 	$(hide) ln -f $(INTERNAL_OTA_PACKAGE_TARGET) $(ALLIANCE_TARGET_PACKAGE)
 	$(hide) $(MD5SUM) $(ALLIANCE_TARGET_PACKAGE) > $(ALLIANCE_TARGET_PACKAGE).md5sum
-	
+	@echo -e ${CL_RED}""${CL_RED}	
 	@echo -e ${CL_RED}"=============================================================================="${CL_RED}
 	@echo -e ${CL_RED}"       ╥╥╥      ╥╥     ╥╥╥    ╥╥╥      ╥╥╥╥      ╥╥╥╥╥╥╓         ╓╓╥╥ ╥╥╥╥╥╥╥╥"${CL_RED}
 	@echo -e ${CL_RED}"       └╫╫╫╦    ╫╫╫    ╫╫╫    ╫╫╫    ╓╫╫╫╫╫╫     ╫╫╫╩╨╨╫╫╫╦ ╓╦╫╫╩╨╨╙╙ ╫╫╫╩╙╙╙╙"${CL_RED}
